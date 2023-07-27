@@ -1,0 +1,43 @@
+version: 2
+
+updates:
+  - package-ecosystem: nuget
+    target-branch: trunk
+    directory: /
+    versioning-strategy: auto
+    schedule:
+      interval: weekly
+      day: sunday
+    open-pull-requests-limit: 1000
+    ignore:
+      - dependency-name: 'Microsoft.Extensions.Http.Polly'
+        versions: ['7.*']
+        update-types: ['version-update:semver-major']
+      - dependency-name: 'Microsoft.Extensions.Hosting.Abstractions'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Logging'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Caching.Abstractions'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Caching.StackExchangeRedis'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Caching.Memory'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Options.DataAnnotations'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Options'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Configuration.Binder'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Hosting'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.DependencyInjection'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Options.ConfigurationExtensions'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Logging.Abstractions'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.DependencyInjection.Abstractions'
+        versions: ['7.*']
+      - dependency-name: 'Microsoft.Extensions.Configuration.Abstractions'
+        versions: ['7.*']
