@@ -4,7 +4,6 @@ updates:
   - package-ecosystem: nuget
     target-branch: trunk
     directory: /
-    versioning-strategy: auto
     schedule:
       interval: weekly
       day: sunday
