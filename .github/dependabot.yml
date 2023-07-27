@@ -2,7 +2,6 @@ version: 2
 
 updates:
   - package-ecosystem: nuget
-    target-branch: trunk
     directory: /
     schedule:
       interval: weekly
